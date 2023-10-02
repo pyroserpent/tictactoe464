@@ -57,4 +57,8 @@ function resetGame() {
             document.getElementById('tic-tac-toe-board').rows[i].cells[j].innerText = '';
         }
     }
+	window.onload = function() {
+    document.body.classList.add('loaded');
+};
+
 }

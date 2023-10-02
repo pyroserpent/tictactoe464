@@ -25,3 +25,16 @@ body {
 #tic-tac-toe-board td:hover {
     background-color: #e0e0e0;
 }
+#game-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0; /* initially hidden */
+    transform: translateY(-20px); /* initially shifted up by 20 pixels */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* animation properties */
+}
+
+body.loaded #game-title {
+    opacity: 1; /* fully visible */
+    transform: translateY(0); /* back to its original position */
+}

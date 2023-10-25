@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tic Tac Toe</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" type="text/jsx"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="game-container">
+        <h1 id="game-title">Tic Tac Toe by Ziaul Chowdhury</h1>
+        <table id="tic-tac-toe-board">
+            <tr>
+                <td onclick="makeMove(0,0)"></td>
+                <td onclick="makeMove(0,1)"></td>
+                <td onclick="makeMove(0,2)"></td>
+            </tr>
+            <tr>
+                <td onclick="makeMove(1,0)"></td>
+                <td onclick="makeMove(1,1)"></td>
+                <td onclick="makeMove(1,2)"></td>
+            </tr>
+            <tr>
+                <td onclick="makeMove(2,0)"></td>
+                <td onclick="makeMove(2,1)"></td>
+                <td onclick="makeMove(2,2)"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/jsx">
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+        import App from './App.js';
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
